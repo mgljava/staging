@@ -4,14 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class CalcServiceTest {
 
-  @InjectMocks
-  private CalcService calcService;
+  private CalcService calcService = new CalcService();
 
   @Test
   public void should_get_3_when_a_is_1_and_b_is_2() {
