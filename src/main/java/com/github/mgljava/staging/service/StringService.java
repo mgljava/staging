@@ -1,6 +1,6 @@
 package com.github.mgljava.staging.service;
 
-public class StringOperation {
+public class StringService {
 
   public String getString(boolean flag) {
     if (flag) {
