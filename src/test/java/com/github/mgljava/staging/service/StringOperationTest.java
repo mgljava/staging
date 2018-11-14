@@ -73,30 +73,6 @@ public class StringOperationTest {
   }
 
   @Test
-  public void should_get_4_when_number_is_4() {
-    // given
-    int number = 4;
-
-    // when
-    final String valueBySwitch = service.getValueBySwitch(number);
-
-    // then
-    assertEquals("4", valueBySwitch);
-  }
-
-  @Test
-  public void should_get_5_when_number_is_5() {
-    // given
-    int number = 5;
-
-    // when
-    final String valueBySwitch = service.getValueBySwitch(number);
-
-    // then
-    assertEquals("5", valueBySwitch);
-  }
-
-  @Test
   public void should_get_default_when_number_is_default() {
     // given
     int number = 6;
