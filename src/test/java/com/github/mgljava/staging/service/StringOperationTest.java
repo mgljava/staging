@@ -1,6 +1,6 @@
 package com.github.mgljava.staging.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -8,6 +8,7 @@ import org.junit.Test;
 public class StringOperationTest {
 
   StringOperation stringOperation;
+
   @Before
   public void setUp() {
     stringOperation = new StringOperation();
@@ -35,5 +36,17 @@ public class StringOperationTest {
 
     // then
     assertEquals("Hello", result);
+  }
+
+  @Test
+  public void should_get_1_when_number_is_1() {
+    // given
+    int number = 1;
+
+    // when
+    final String valueBySwitch = stringOperation.getValueBySwitch(number);
+
+    // then
+    assertEquals("1", valueBySwitch);
   }
 }
