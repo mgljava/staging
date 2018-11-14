@@ -27,8 +27,14 @@ repositories {
 
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.0'
+    annotationProcessor 'org.projectlombok:lombok:1.18.0'
     implementation('org.springframework.boot:spring-boot-starter')
+
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.2.0"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:5.2.0"
+    testImplementation 'org.mockito:mockito-junit-jupiter:2.21.0'
 }
 
 jacocoTestReport {
@@ -37,4 +43,10 @@ jacocoTestReport {
         xml.enabled false
         csv.enabled false
     }
+}
+
+copy {
+    from "./config/githooks/"
+    into "./.git/hooks/"
+    fileMode 0755
 }
