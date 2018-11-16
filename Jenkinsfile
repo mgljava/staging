@@ -1,9 +1,4 @@
 pipeline {
-  agent {
-    node {
-      label "jenkins-agent"
-    }
-  }
   stages {
     stage('Compile & Check') {
       steps {
