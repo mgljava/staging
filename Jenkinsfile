@@ -2,7 +2,6 @@ pipeline {
   agent {
     node {
       label "jenkins-agent"
-      customWorkspace "workspace/${URLDecoder.decode(JOB_NAME)}/${BUILD_NUMBER}"
     }
   }
   stages {
