@@ -1,5 +1,8 @@
 package com.github.mgljava.staging.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class StringService {
 
   public String getString(boolean flag) {
