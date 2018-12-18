@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 
 install:
-  - TERM=dumb gradle assemble
+  - TERM=gradle assemble
 
 script:
-  - TERM=dumb gradle check -i
+  - TERM=gradle check -i
