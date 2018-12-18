@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 
 install:
-  - ./gradlew assemble
+  - TERM=dumb ./gradlew assemble
 
 script:
-  - ./gradlew check -i
+  - TERM=dumb ./gradlew check -i
